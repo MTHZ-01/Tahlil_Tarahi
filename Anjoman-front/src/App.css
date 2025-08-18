@@ -5992,3 +5992,10 @@ a {
 .Slide {
   height: 47rem !important;
 }
+
+
+@media (max-width: 1200px) {
+  .Slide {
+    height: 22rem !important; /* or whatever height you want */
+  }
+}

@@ -52,7 +52,7 @@ class SMSVerifyComponent extends Component {
 
     console.log(`Sending request with email: ${email}`); // Debug log
 
-    fetch('https://alucarddev.ir/digitalAssets/generatekeyCode/', {
+    fetch('http://127.0.0.1:8000/digitalAssets/generatekeyCode/', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

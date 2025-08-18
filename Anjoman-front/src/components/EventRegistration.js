@@ -23,7 +23,7 @@ class EventRegistration extends Component {
     loadUserId = () => {
         const token = this.cookies.get('sessionId') || '';
         this.setState({ loading: true, error: null, success: null });
-        fetch(`http://127.0.0.1:8000/digitalAssets/get_current_user`, {
+        fetch(`https://alucarddev.ir/digitalAssets/get_current_user`, {
             method: 'GET',
             headers: {
                 'Authorization': `Bearer ${token}`,
@@ -57,7 +57,7 @@ class EventRegistration extends Component {
         this.setState({ loading: true, error: null, success: null });
 
         const token = this.cookies.get('sessionId') || '';
-        fetch(`http://127.0.0.1:8000/digitalAssets/events/${eventId}/register`, {
+        fetch(`https://alucarddev.ir/digitalAssets/events/${eventId}/register`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
