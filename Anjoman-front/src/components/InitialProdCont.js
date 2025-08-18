@@ -149,64 +149,6 @@ class InitialProdCont extends Component {
         return (
             <Fragment>
 
-                <div className='col-12 center'>
-                    <div className=' InitialProdCont col-12 col-lg-10 '>
-                        <Swiper className=''
-
-
-                            grabCursor={true}
-                            centeredSlides={false}
-                            loop={false}
-                            slidesPerView={6}
-
-                            coverflowEffect={{
-                                rotate: 0,
-                                stretch: 0,
-                                depth: 0,
-                                modifier: 0,
-                            }}
-                            pagination={{ el: '.swiper-pagination', clickable: true }}
-                            navigation={{
-                                nextEl: '.swiper-button-next',
-                                prevEl: '.swiper-button-prev',
-                                clickable: true,
-                            }}
-                            modules={[EffectCoverflow, Pagination, Navigation]}
-                        >
-                            <SwiperSlide>
-
-                                <div className='initProdInitivie'>
-                                    <WhatshotIcon className='WhatshotIconForAmazings' />
-                                    <span className='amazingsTitle'>شگفت انگیز ها همیشگی نیستند!</span>
-                                </div>
-
-                            </SwiperSlide>
-                            {this.props.EventData &&
-
-
-                                this.props.EventData.filter(i => i.isFantastic ).map(i =>
-                                    <SwiperSlide>
-                                        <div className='sectionProdCont IniteventsizeController'>
-                                            <EventMobile title={i.title} price={i.price} img={i.imgUrl} data={i} />
-                                        </div>
-                                    </SwiperSlide>
-                                )}
-
-
-                            <div className="slider2-controler">
-
-                                <div className="swiper-button-prev center pervBtnSwiper3 ">
-                                    {/* <ChevronLeftIcon /> */}
-                                </div>
-                                <div className="swiper-button-next center nxtBtnSwiper3">
-                                    {/* <ChevronRightIcon /> */}
-                                </div>
-
-                            </div>
-                        </Swiper>
-
-                    </div>
-                </div>
 
 
             </Fragment>

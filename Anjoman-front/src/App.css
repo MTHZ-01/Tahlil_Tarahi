@@ -4206,11 +4206,14 @@ h5 {
 
 .EventMParent>h3 {
   position: absolute;
-  right: 18px;
-  top: 9.5rem;
-  font-size: 24px;
+  right: 7px;
+  top: 9.6rem;
+  display: flex !IMPORTANT;
+  justify-content: start;
+  font-size: 17px;
+  flex-direction: column;
   font-weight: bold !important;
-  color: #6a6a6a;
+  align-items: start;
 }
 
 .PricingMobile {

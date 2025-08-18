@@ -309,45 +309,12 @@ export class EventInfo extends Component {
                                 <Box sx={{ position: 'sticky', top: '20px', zIndex: 10 }}>
                                     <Box sx={{ mb: 4, zIndex: 11 }}>
                                         <EventRegistration
-                                            colorCode={this.state.selectedColorCode}
                                             colorName={this.state.selectedColor}
-                                            price={specificData.price}
                                             data={specificData}
                                             eventId={specificData.eventId}
                                         />
                                     </Box>
-                                    {specificData.eventColor.length > 0 && (
-                                        <Paper
-                                            elevation={0}
-                                            sx={{
-                                                p: 3,
-                                                mb: 4,
-                                                border: '1px solid #e0e0e0',
-                                                borderRadius: '8px'
-                                            }}
-                                        >
-                                            <Typography
-                                                variant="h6"
-                                                sx={{
-                                                    fontFamily: '"Times New Roman", serif',
-                                                    mb: 2,
-                                                    color: '#000'
-                                                }}
-                                            >
-                                                گزینه‌های رنگ
-                                            </Typography>
-                                            <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1 }}>
-                                                {specificData.eventColor.map(i => (
-                                                    <ColorItem
-                                                        key={i.colorName}
-                                                        color={i.color}
-                                                        name={i.colorName}
-                                                        onClick={() => this.selectColor(i)}
-                                                    />
-                                                ))}
-                                            </Box>
-                                        </Paper>
-                                    )}
+
                                     {eventsWithSamedivision.length > 0 && (
                                         <Paper
                                             elevation={0}

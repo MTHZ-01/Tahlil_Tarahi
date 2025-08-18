@@ -91,10 +91,8 @@ export class Footer extends Component {
                         <div className='col-12 center'>
 
                             <div className={`col-11  d-flex flex-row  ${this.props.navBarSmallView && "center m-0 col-12"}`}>
-                                <p className='phoneNumCont'>
-                                    05137240726
-                                </p>
-                                <p className='phoneNumContV2'>شماره تماس فروشگاه</p>
+
+
                             </div>
                         </div>
                     </div>
